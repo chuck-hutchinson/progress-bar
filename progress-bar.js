@@ -20,6 +20,7 @@
  * The background images used in this plugin (see CSS file) were derived from https://www.svgbackgrounds.com/
  * See https://www.svgbackgrounds.com/elements/animated-svg-preloaders/
  */
+
 (function($) {
 
     function getRandomNumber(min, max) {
