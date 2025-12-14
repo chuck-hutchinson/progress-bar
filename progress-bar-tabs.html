@@ -188,12 +188,23 @@ function hideProgressBar(container) {
 														<button onclick="hideProgressBar($('#progress-bar1'))">Hide</button>
 													</div>
 													<div id="progress-bar1"></div>
+													<script id="default">
+	$(document).ready(function() {
+		$('#progress-bar1').progressBar({ show: true });
+	});
+													</script>
+												</div>
+											</div>
+											<div class="p-2"></div>
+											<div class="card bg-light p-2">
+												<div class="card-header">Source</div>
+												<div class="card-body">
+													<pre><code><span id="default-span"></span></code></pre>
 													<script>
-											$(document).ready(function() {
-												$('#progress-bar1').progressBar({ show: true });
-											});
-
-									</script>
+														$(document).ready(function() {
+															$('#default-span').html($('#default').html());
+														});
+													</script>
 												</div>
 											</div>
 										</div>
@@ -207,12 +218,23 @@ function hideProgressBar(container) {
 														<button onclick="hideProgressBar($('#progress-bar5'))">Hide</button>
 													</div>
 													<div id="progress-bar5"></div>
-													<script>
-											$(document).ready(function() {
-												$('#progress-bar5').progressBar({ show: true, backgroundClass: 'progressbar-background-ripples' });
-											});
-
+													<script id="ripples">
+	$(document).ready(function() {
+		$('#progress-bar5').progressBar({ show: true, backgroundClass: 'progressbar-background-ripples' });
+	});
 									</script>
+												</div>
+											</div>
+											<div class="p-2"></div>
+											<div class="card bg-light">
+												<div class="card-header">Source</div>
+												<div class="card-body">
+													<pre><code><span id="default-span5"></span></code></pre>
+													<script>
+													$(document).ready(function() {
+														$('#default-span5').html($('#ripples').html());
+													});
+													</script>
 												</div>
 											</div>
 										</div>
@@ -226,12 +248,23 @@ function hideProgressBar(container) {
 														<button onclick="hideProgressBar($('#progress-bar4'))">Hide</button>
 													</div>
 													<div id="progress-bar4"></div>
+													<script id="spinning-gear">
+	$(document).ready(function() {
+		$('#progress-bar4').progressBar({ show: true, backgroundClass: 'progressbar-background-spinning-gear' });
+	});
+													</script>
+												</div>
+											</div>
+											<div class="p-2"></div>
+											<div class="card bg-light">
+												<div class="card-header">Source</div>
+												<div class="card-body">
+													<pre><code><span id="default-span4"></span></code></pre>
 													<script>
-											$(document).ready(function() {
-												$('#progress-bar4').progressBar({ show: true, backgroundClass: 'progressbar-background-spinning-gear' });
-											});
-
-									</script>
+													$(document).ready(function() {
+														$('#default-span4').html($('#spinning-gear').html());
+													});
+													</script>
 												</div>
 											</div>
 										</div>
@@ -245,12 +278,23 @@ function hideProgressBar(container) {
 														<button onclick="hideProgressBar($('#progress-bar6'))">Hide</button>
 													</div>
 													<div id="progress-bar6"></div>
+													<script id="bouncing-circles">
+	$(document).ready(function() {
+		$('#progress-bar6').progressBar({ show: true, backgroundClass: 'progressbar-background-bouncing-circles' });
+	});
+													</script>
+												</div>
+											</div>
+											<div class="p-2"></div>
+											<div class="card bg-light">
+												<div class="card-header">Source</div>
+												<div class="card-body">
+													<pre><code><span id="default-span6"></span></code></pre>
 													<script>
-											$(document).ready(function() {
-												$('#progress-bar6').progressBar({ show: true, backgroundClass: 'progressbar-background-bouncing-circles' });
-											});
-
-									</script>
+													$(document).ready(function() {
+														$('#default-span6').html($('#bouncing-circles').html());
+													});
+													</script>
 												</div>
 											</div>
 										</div>
@@ -264,12 +308,23 @@ function hideProgressBar(container) {
 														<button onclick="hideProgressBar($('#progress-bar7'))">Hide</button>
 													</div>
 													<div id="progress-bar7"></div>
+													<script id="motion-blur">
+	$(document).ready(function() {
+		$('#progress-bar7').progressBar({ show: true, backgroundClass: 'progressbar-background-motion-blur' });
+	});
+													</script>
+												</div>
+											</div>
+											<div class="p-2"></div>
+											<div class="card bg-light">
+												<div class="card-header">Source</div>
+												<div class="card-body">
+													<pre><code><span id="default-span7"></span></code></pre>
 													<script>
-											$(document).ready(function() {
-												$('#progress-bar7').progressBar({ show: true, backgroundClass: 'progressbar-background-motion-blur' });
-											});
-
-									</script>
+													$(document).ready(function() {
+														$('#default-span7').html($('#motion-blur').html());
+													});
+													</script>
 												</div>
 											</div>
 										</div>
@@ -283,12 +338,23 @@ function hideProgressBar(container) {
 														<button onclick="hideProgressBar($('#progress-bar8'))">Hide</button>
 													</div>
 													<div id="progress-bar8"></div>
+													<script id="infinite">
+	$(document).ready(function() {
+		$('#progress-bar8').progressBar({ show: true, backgroundClass: 'progressbar-background-infinite' });
+	});
+													</script>
+												</div>
+											</div>
+											<div class="p-2"></div>
+											<div class="card bg-light">
+												<div class="card-header">Source</div>
+												<div class="card-body">
+													<pre><code><span id="default-span8"></span></code></pre>
 													<script>
-											$(document).ready(function() {
-												$('#progress-bar8').progressBar({ show: true, backgroundClass: 'progressbar-background-infinite' });
-											});
-
-									</script>
+													$(document).ready(function() {
+														$('#default-span8').html($('#infinite').html());
+													});
+													</script>
 												</div>
 											</div>
 										</div>
@@ -302,12 +368,23 @@ function hideProgressBar(container) {
 														<button onclick="hideProgressBar($('#progress-bar9'))">Hide</button>
 													</div>
 													<div id="progress-bar9"></div>
+													<script id="bouncing-squares">
+	$(document).ready(function() {
+		$('#progress-bar9').progressBar({ show: true, backgroundClass: 'progressbar-background-bouncing-squares' });
+	});
+													</script>
+												</div>
+											</div>
+											<div class="p-2"></div>
+  											<div class="card bg-light">
+												<div class="card-header">Source</div>
+												<div class="card-body">
+													<pre><code><span id="default-span9"></span></code></pre>
 													<script>
-											$(document).ready(function() {
-												$('#progress-bar9').progressBar({ show: true, backgroundClass: 'progressbar-background-bouncing-squares' });
-											});
-
-									</script>
+													$(document).ready(function() {
+														$('#default-span9').html($('#bouncing-squares').html());
+													});
+													</script>
 												</div>
 											</div>
 										</div>
@@ -321,12 +398,23 @@ function hideProgressBar(container) {
 														<button onclick="hideProgressBar($('#progress-bar10'))">Hide</button>
 													</div>
 													<div id="progress-bar10"></div>
+													<script id="bouncing-ball">
+	$(document).ready(function() {
+		$('#progress-bar10').progressBar({ show: true, backgroundClass: 'progressbar-background-bouncing-ball' });
+	});
+													</script>
+												</div>
+											</div>
+											<div class="p-2"></div>
+											<div class="card bg-light">
+												<div class="card-header">Source</div>
+												<div class="card-body">
+													<pre><code><span id="default-span10"></span></code></pre>
 													<script>
-											$(document).ready(function() {
-												$('#progress-bar10').progressBar({ show: true, backgroundClass: 'progressbar-background-bouncing-ball' });
-											});
-
-									</script>
+													$(document).ready(function() {
+														$('#default-span10').html($('#bouncing-ball').html());
+													});
+													</script>
 												</div>
 											</div>
 										</div>
@@ -340,12 +428,23 @@ function hideProgressBar(container) {
 														<button onclick="hideProgressBar($('#progress-bar11'))">Hide</button>
 													</div>
 													<div id="progress-bar11"></div>
+													<script id="fade-staggered-circles">
+	$(document).ready(function() {
+		$('#progress-bar11').progressBar({ show: true, backgroundClass: 'progressbar-background-fade-staggered-circles' });
+	});
+													</script>
+												</div>
+											</div>
+											<div class="p-2"></div>
+											<div class="card bg-light">
+												<div class="card-header">Source</div>
+												<div class="card-body">
+													<pre><code><span id="default-span11"></span></code></pre>
 													<script>
-											$(document).ready(function() {
-												$('#progress-bar11').progressBar({ show: true, backgroundClass: 'progressbar-background-fade-staggered-circles' });
-											});
-
-									</script>
+													$(document).ready(function() {
+														$('#default-span11').html($('#fade-staggered-circles').html());
+													});
+													</script>
 												</div>
 											</div>
 										</div>
@@ -359,12 +458,23 @@ function hideProgressBar(container) {
 														<button onclick="hideProgressBar($('#progress-bar12'))">Hide</button>
 													</div>
 													<div id="progress-bar12"></div>
+													<script id="fade-staggered-squares">
+	$(document).ready(function() {
+		$('#progress-bar12').progressBar({ show: true, backgroundClass: 'progressbar-background-fade-staggered-squares' });
+	});
+													</script>
+												</div>
+											</div>
+											<div class="p-2"></div>
+											<div class="card bg-light">
+												<div class="card-header">Source</div>
+												<div class="card-body">
+													<pre><code><span id="default-span12"></span></code></pre>
 													<script>
-											$(document).ready(function() {
-												$('#progress-bar12').progressBar({ show: true, backgroundClass: 'progressbar-background-fade-staggered-squares' });
-											});
-
-									</script>
+													$(document).ready(function() {
+														$('#default-span12').html($('#fade-staggered-squares').html());
+													});
+													</script>
 												</div>
 											</div>
 										</div>
@@ -378,12 +488,23 @@ function hideProgressBar(container) {
 														<button onclick="hideProgressBar($('#progress-bar13'))">Hide</button>
 													</div>
 													<div id="progress-bar13"></div>
+													<script id="gears-spinner">
+	$(document).ready(function() {
+		$('#progress-bar13').progressBar({ show: true, backgroundClass: 'progressbar-background-gears-spinner' });
+	});
+													</script>
+												</div>
+											</div>
+											<div class="p-2"></div>
+											<div class="card bg-light">
+												<div class="card-header">Source</div>
+												<div class="card-body">
+													<pre><code><span id="default-span13"></span></code></pre>
 													<script>
-											$(document).ready(function() {
-												$('#progress-bar13').progressBar({ show: true, backgroundClass: 'progressbar-background-gears-spinner' });
-											});
-
-									</script>
+													$(document).ready(function() {
+														$('#default-span13').html($('#gears-spinner').html());
+													});
+													</script>
 												</div>
 											</div>
 										</div>
@@ -397,12 +518,23 @@ function hideProgressBar(container) {
 														<button onclick="hideProgressBar($('#progress-bar14'))">Hide</button>
 													</div>
 													<div id="progress-bar14"></div>
+													<script id="spinning-dots">
+	$(document).ready(function() {
+		$('#progress-bar14').progressBar({ show: true, backgroundClass: 'progressbar-background-spinning-dots' });
+	});
+													</script>
+												</div>
+											</div>
+											<div class="p-2"></div>
+											<div class="card bg-light">
+												<div class="card-header">Source</div>
+												<div class="card-body">
+													<pre><code><span id="default-span14"></span></code></pre>
 													<script>
-											$(document).ready(function() {
-												$('#progress-bar14').progressBar({ show: true, backgroundClass: 'progressbar-background-spinning-dots' });
-											});
-
-									</script>
+													$(document).ready(function() {
+														$('#default-span14').html($('#spinning-dots').html());
+													});
+													</script>
 												</div>
 											</div>
 										</div>
@@ -416,12 +548,23 @@ function hideProgressBar(container) {
 														<button onclick="hideProgressBar($('#progress-bar15'))">Hide</button>
 													</div>
 													<div id="progress-bar15"></div>
+													<script id="custom-text-message">
+	$(document).ready(function() {
+		$('#progress-bar15').progressBar({ show: true, message: 'Loading...' });
+	});
+													</script>
+												</div>
+											</div>
+											<div class="p-2"></div>
+											<div class="card bg-light">
+												<div class="card-header">Source</div>
+												<div class="card-body">
+													<pre><code><span id="default-span15"></span></code></pre>
 													<script>
-											$(document).ready(function() {
-												$('#progress-bar15').progressBar({ show: true, message: 'Loading...' });
-											});
-
-									</script>
+													$(document).ready(function() {
+														$('#default-span15').html($('#custom-text-message').html());
+													});
+													</script>
 												</div>
 											</div>
 										</div>
@@ -435,15 +578,26 @@ function hideProgressBar(container) {
 														<button onclick="hideProgressBar($('#progress-bar16'))">Hide</button>
 													</div>
 													<div id="progress-bar16"></div>
-													<script>
+													<script id="custom-html-message">
 											$(document).ready(function() {
-											var myHtmlBlock = '<h1>Just a moment...</h1>' +
-																  '<p>This is a custom message with <em>markup</em>.</p>';
+		var myHtmlBlock = '<h1>Just a moment...</h1>' +
+						  '<p>This is a custom message with <em>markup</em>.</p>';
 
-												$('#progress-bar16').progressBar({ show: true, message: myHtmlBlock });
-											});
-
-									</script>
+		$('#progress-bar16').progressBar({ show: true, message: myHtmlBlock });
+	});
+													</script>
+												</div>
+											</div>
+											<div class="p-2"></div>
+											<div class="card bg-light">
+												<div class="card-header">Source</div>
+												<div class="card-body">
+													<pre><code><span id="default-span16"></span></code></pre>
+													<script>
+													$(document).ready(function() {
+														$('#default-span16').html($('#custom-html-message').html());
+													});
+													</script>
 												</div>
 											</div>
 										</div>
@@ -471,17 +625,27 @@ function hideProgressBar(container) {
 														<button onclick="hideProgressBar($('#progress-bar23'))">Hide</button>
 													</div>
 													<div id="progress-bar23"></div>
+													<script id="custom-html-message-with-id-selector">
+	$(document).ready(function() {
+		var myHtmlBlock = $('#id1').html();
+		$('#progress-bar23').progressBar({ show: true, message: myHtmlBlock });
+	});
+													</script>
+												</div>
+											</div>
+											<div class="p-2"></div>
+											<div class="card bg-light">
+												<div class="card-header">Source</div>
+												<div class="card-body">
+													<pre><code><span id="default-span23"></span></code></pre>
 													<script>
-											$(document).ready(function() {
-												var myHtmlBlock = $('#id1').html();
-												$('#progress-bar23').progressBar({ show: true, message: myHtmlBlock });
-											});
-
-									</script>
+													$(document).ready(function() {
+														$('#default-span23').html($('#custom-html-message-with-id-selector').html());
+													});
+													</script>
 												</div>
 											</div>
 										</div>
-
 										<div class="carousel-item">
 											<div class="card bg-light">
 												<div class="card-header">Custom 'Blinking' Text Message</div>
@@ -492,12 +656,23 @@ function hideProgressBar(container) {
 														<button onclick="hideProgressBar($('#progress-bar17'))">Hide</button>
 													</div>
 													<div id="progress-bar17"></div>
+													<script id="custom-blinking-text">
+	$(document).ready(function() {
+		$('#progress-bar17').progressBar({ show: true, message: 'Loading...', blinkMessage: true });
+	});
+													</script>
+												</div>
+											</div>
+											<div class="p-2"></div>
+											<div class="card bg-light">
+												<div class="card-header">Source</div>
+												<div class="card-body">
+													<pre><code><span id="default-span17"></span></code></pre>
 													<script>
-											$(document).ready(function() {
-												$('#progress-bar17').progressBar({ show: true, message: 'Loading...', blinkMessage: true });
-											});
-
-									</script>
+													$(document).ready(function() {
+														$('#default-span17').html($('#custom-blinking-text').html());
+													});
+													</script>
 												</div>
 											</div>
 										</div>
@@ -511,15 +686,26 @@ function hideProgressBar(container) {
 														<button onclick="hideProgressBar($('#progress-bar18'))">Hide</button>
 													</div>
 													<div id="progress-bar18"></div>
+													<script id="custom-blinking-html-message">
+	$(document).ready(function() {
+		var myHtmlBlock = '<h1>Just a moment...</h1>' +
+						  '<p>This is a custom message with <em>markup</em>.</p>';
+
+		$('#progress-bar18').progressBar({ show: true, message: myHtmlBlock, blinkMessage: true });
+	});
+													</script>
+												</div>
+											</div>
+											<div class="p-2"></div>
+											<div class="card bg-light">
+												<div class="card-header">Source</div>
+												<div class="card-body">
+													<pre><code><span id="default-span18"></span></code></pre>
 													<script>
-											$(document).ready(function() {
-												var myHtmlBlock = '<h1>Just a moment...</h1>' +
-																  '<p>This is a custom message with <em>markup</em>.</p>';
-
-												$('#progress-bar18').progressBar({ show: true, message: myHtmlBlock, blinkMessage: true });
-											});
-
-									</script>
+													$(document).ready(function() {
+														$('#default-span18').html($('#custom-blinking-html-message').html());
+													});
+													</script>
 												</div>
 											</div>
 										</div>
@@ -533,12 +719,23 @@ function hideProgressBar(container) {
 														<button onclick="hideProgressBar($('#progress-bar19'))">Hide</button>
 													</div>
 													<div id="progress-bar19"></div>
+													<script id="blinking-gears-spinner">
+	$(document).ready(function() {
+		$('#progress-bar19').progressBar({ show: true, backgroundClass: 'progressbar-background-gears-spinner', blinkOverlay: true });
+	});
+													</script>
+												</div>
+											</div>
+											<div class="p-2"></div>
+											<div class="card bg-light">
+												<div class="card-header">Source</div>
+												<div class="card-body">
+													<pre><code><span id="default-span19"></span></code></pre>
 													<script>
-											$(document).ready(function() {
-												$('#progress-bar19').progressBar({ show: true, backgroundClass: 'progressbar-background-gears-spinner', blinkOverlay: true });
-											});
-
-									</script>
+													$(document).ready(function() {
+														$('#default-span19').html($('#blinking-gears-spinner').html());
+													});
+													</script>
 												</div>
 											</div>
 										</div>
@@ -552,12 +749,23 @@ function hideProgressBar(container) {
 														<button onclick="hideProgressBar($('#progress-bar20'))">Hide</button>
 													</div>
 													<div id="progress-bar20"></div>
+													<script id="blinking-spinning-dots">
+	$(document).ready(function() {
+		$('#progress-bar20').progressBar({ show: true, backgroundClass: 'progressbar-background-spinning-dots', blinkOverlay: true  });
+	});
+													</script>
+												</div>
+											</div>
+											<div class="p-2"></div>
+											<div class="card bg-light">
+												<div class="card-header">Source</div>
+												<div class="card-body">
+													<pre><code><span id="default-span20"></span></code></pre>
 													<script>
-											$(document).ready(function() {
-												$('#progress-bar20').progressBar({ show: true, backgroundClass: 'progressbar-background-spinning-dots', blinkOverlay: true  });
-											});
-
-									</script>
+													$(document).ready(function() {
+														$('#default-span20').html($('#blinking-spinning-dots').html());
+													});
+													</script>
 												</div>
 											</div>
 										</div>
@@ -571,12 +779,23 @@ function hideProgressBar(container) {
 														<button onclick="hideProgressBar($('#progress-bar21'))">Hide</button>
 													</div>
 													<div id="progress-bar21"></div>
+													<script id="blinking-gears-spinner-and-blinking-text-message">
+	$(document).ready(function() {
+		$('#progress-bar21').progressBar({ show: true, backgroundClass: 'progressbar-background-gears-spinner', message: 'Loading...', blinkMessage: true, blinkOverlay: true });
+	});
+													</script>
+												</div>
+											</div>
+											<div class="p-2"></div>
+											<div class="card bg-light">
+												<div class="card-header">Source</div>
+												<div class="card-body">
+													<pre><code><span id="default-span21"></span></code></pre>
 													<script>
-											$(document).ready(function() {
-												$('#progress-bar21').progressBar({ show: true, backgroundClass: 'progressbar-background-gears-spinner', message: 'Loading...', blinkMessage: true, blinkOverlay: true });
-											});
-
-									</script>
+													$(document).ready(function() {
+														$('#default-span21').html($('#blinking-gears-spinner-and-blinking-text-message').html());
+													});
+													</script>
 												</div>
 											</div>
 										</div>
@@ -590,15 +809,26 @@ function hideProgressBar(container) {
 														<button onclick="hideProgressBar($('#progress-bar22'))">Hide</button>
 													</div>
 													<div id="progress-bar22"></div>
+													<script id="blinking-spinning-dots-blinking-custom-html-message">
+	$(document).ready(function() {
+		var myHtmlBlock = '<h1>Just a moment...</h1>' +
+						  '<p>This is a custom message with <em>markup</em>.</p>';
+
+		$('#progress-bar22').progressBar({ show: true, backgroundClass: 'progressbar-background-spinning-dots', message: myHtmlBlock, blinkMessage: true, blinkOverlay: true  });
+	});
+													</script>
+												</div>
+											</div>
+											<div class="p-2"></div>
+											<div class="card bg-light">
+												<div class="card-header">Source</div>
+												<div class="card-body">
+													<pre><code><span id="default-span22"></span></code></pre>
 													<script>
-											$(document).ready(function() {
-												var myHtmlBlock = '<h1>Just a moment...</h1>' +
-																  '<p>This is a custom message with <em>markup</em>.</p>';
-
-												$('#progress-bar22').progressBar({ show: true, backgroundClass: 'progressbar-background-spinning-dots', message: myHtmlBlock, blinkMessage: true, blinkOverlay: true  });
-											});
-
-									</script>
+													$(document).ready(function() {
+														$('#default-span22').html($('#blinking-spinning-dots-blinking-custom-html-message').html());
+													});
+													</script>
 												</div>
 											</div>
 										</div>
@@ -612,12 +842,23 @@ function hideProgressBar(container) {
 														<button onclick="hideProgressBar($('#progress-bar2'))">Hide</button>
 													</div>
 													<div id="progress-bar2"></div>
+													<script id="day-of-week">
+	$(document).ready(function() {
+		$('#progress-bar2').progressBar({ show: true, dowBackground: true });
+	});
+													</script>
+												</div>
+											</div>
+											<div class="p-2"></div>
+											<div class="card bg-light">
+												<div class="card-header">Source</div>
+												<div class="card-body">
+													<pre><code><span id="default-span2"></span></code></pre>
 													<script>
-											$(document).ready(function() {
-												$('#progress-bar2').progressBar({ show: true, dowBackground: true });
-											});
-
-									</script>
+													$(document).ready(function() {
+														$('#default-span2').html($('#day-of-week').html());
+													});
+													</script>
 												</div>
 											</div>
 										</div>
@@ -631,12 +872,23 @@ function hideProgressBar(container) {
 														<button onclick="hideProgressBar($('#progress-bar3'))">Hide</button>
 													</div>
 													<div id="progress-bar3"></div>
+													<script id="random">
+	$(document).ready(function() {
+		$('#progress-bar3').progressBar({ show: true, randomBackground: true });
+	});
+													</script>
+												</div>
+											</div>
+											<div class="p-2"></div>
+											<div class="card bg-light">
+												<div class="card-header">Source</div>
+												<div class="card-body">
+													<pre><code><span id="default-span3"></span></code></pre>
 													<script>
-											$(document).ready(function() {
-												$('#progress-bar3').progressBar({ show: true, randomBackground: true });
-											});
-
-									</script>
+													$(document).ready(function() {
+														$('#default-span3').html($('#random').html());
+													});
+												</script>
 												</div>
 											</div>
 										</div>
