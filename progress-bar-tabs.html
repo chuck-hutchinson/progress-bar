@@ -13,6 +13,8 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<!--	<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.4.0/clipboard.js" integrity="sha512-I9OrKsdK01dpIZ7hLciafnQLwRERglFFIGUP8UlthtDbkl6NOS0/dGyCPrwpa0q91AVRXrsmOHtHUhF3Aj9Sdg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+	<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
 
 	<link rel="stylesheet" href="progress-bar.css">
 	<script src="progress-bar.js"></script>
@@ -50,6 +52,19 @@
 
 </style>
 <script>
+
+$(document).ready(function() {
+	var clipboard = new ClipboardJS('.btn');
+
+	clipboard.on('success', function(e) {
+		console.log('Action:', e.action);
+		console.log('Text:', e.text);
+		console.log('Trigger:', e.trigger);
+
+		// Clear the user's selection
+		e.clearSelection();
+	});
+});
 
 function toggleProgressBar(container) {
 	container.toggle();
@@ -199,6 +214,8 @@ function hideProgressBar(container) {
 											<div class="card bg-light p-2">
 												<div class="card-header">Source</div>
 												<div class="card-body">
+													<button class="btn bi bi-copy" data-clipboard-target="#default-span">
+													</button>
 													<pre><code><span id="default-span"></span></code></pre>
 													<script>
 														$(document).ready(function() {
@@ -259,7 +276,7 @@ function hideProgressBar(container) {
 											<div class="card bg-light">
 												<div class="card-header">Source</div>
 												<div class="card-body">
-													<pre><code><span id="default-span4"></span></code></pre>
+													<pre><code class="code-block"><span id="default-span4"></span></code></pre>
 													<script>
 													$(document).ready(function() {
 														$('#default-span4').html($('#spinning-gear').html());
@@ -289,7 +306,7 @@ function hideProgressBar(container) {
 											<div class="card bg-light">
 												<div class="card-header">Source</div>
 												<div class="card-body">
-													<pre><code><span id="default-span6"></span></code></pre>
+													<pre><code class="code-block"><span id="default-span6"></span></code></pre>
 													<script>
 													$(document).ready(function() {
 														$('#default-span6').html($('#bouncing-circles').html());
@@ -319,7 +336,7 @@ function hideProgressBar(container) {
 											<div class="card bg-light">
 												<div class="card-header">Source</div>
 												<div class="card-body">
-													<pre><code><span id="default-span7"></span></code></pre>
+													<pre><code class="code-block"><span id="default-span7"></span></code></pre>
 													<script>
 													$(document).ready(function() {
 														$('#default-span7').html($('#motion-blur').html());
@@ -349,7 +366,7 @@ function hideProgressBar(container) {
 											<div class="card bg-light">
 												<div class="card-header">Source</div>
 												<div class="card-body">
-													<pre><code><span id="default-span8"></span></code></pre>
+													<pre><code class="code-block"><span id="default-span8"></span></code></pre>
 													<script>
 													$(document).ready(function() {
 														$('#default-span8').html($('#infinite').html());
@@ -379,7 +396,7 @@ function hideProgressBar(container) {
   											<div class="card bg-light">
 												<div class="card-header">Source</div>
 												<div class="card-body">
-													<pre><code><span id="default-span9"></span></code></pre>
+													<pre><code class="code-block"><span id="default-span9"></span></code></pre>
 													<script>
 													$(document).ready(function() {
 														$('#default-span9').html($('#bouncing-squares').html());
@@ -409,7 +426,7 @@ function hideProgressBar(container) {
 											<div class="card bg-light">
 												<div class="card-header">Source</div>
 												<div class="card-body">
-													<pre><code><span id="default-span10"></span></code></pre>
+													<pre><code class="code-block"><span id="default-span10"></span></code></pre>
 													<script>
 													$(document).ready(function() {
 														$('#default-span10').html($('#bouncing-ball').html());
@@ -439,7 +456,7 @@ function hideProgressBar(container) {
 											<div class="card bg-light">
 												<div class="card-header">Source</div>
 												<div class="card-body">
-													<pre><code><span id="default-span11"></span></code></pre>
+													<pre><code class="code-block"><span id="default-span11"></span></code></pre>
 													<script>
 													$(document).ready(function() {
 														$('#default-span11').html($('#fade-staggered-circles').html());
@@ -469,7 +486,7 @@ function hideProgressBar(container) {
 											<div class="card bg-light">
 												<div class="card-header">Source</div>
 												<div class="card-body">
-													<pre><code><span id="default-span12"></span></code></pre>
+													<pre><code class="code-block"><span id="default-span12"></span></code></pre>
 													<script>
 													$(document).ready(function() {
 														$('#default-span12').html($('#fade-staggered-squares').html());
@@ -499,7 +516,7 @@ function hideProgressBar(container) {
 											<div class="card bg-light">
 												<div class="card-header">Source</div>
 												<div class="card-body">
-													<pre><code><span id="default-span13"></span></code></pre>
+													<pre><code class="code-block"><span id="default-span13"></span></code></pre>
 													<script>
 													$(document).ready(function() {
 														$('#default-span13').html($('#gears-spinner').html());
@@ -529,7 +546,7 @@ function hideProgressBar(container) {
 											<div class="card bg-light">
 												<div class="card-header">Source</div>
 												<div class="card-body">
-													<pre><code><span id="default-span14"></span></code></pre>
+													<pre><code class="code-block"><span id="default-span14"></span></code></pre>
 													<script>
 													$(document).ready(function() {
 														$('#default-span14').html($('#spinning-dots').html());
@@ -559,7 +576,7 @@ function hideProgressBar(container) {
 											<div class="card bg-light">
 												<div class="card-header">Source</div>
 												<div class="card-body">
-													<pre><code><span id="default-span15"></span></code></pre>
+													<pre><code class="code-block"><span id="default-span15"></span></code></pre>
 													<script>
 													$(document).ready(function() {
 														$('#default-span15').html($('#custom-text-message').html());
@@ -592,7 +609,7 @@ function hideProgressBar(container) {
 											<div class="card bg-light">
 												<div class="card-header">Source</div>
 												<div class="card-body">
-													<pre><code><span id="default-span16"></span></code></pre>
+													<pre><code class="code-block"><span id="default-span16"></span></code></pre>
 													<script>
 													$(document).ready(function() {
 														$('#default-span16').html($('#custom-html-message').html());
@@ -637,7 +654,7 @@ function hideProgressBar(container) {
 											<div class="card bg-light">
 												<div class="card-header">Source</div>
 												<div class="card-body">
-													<pre><code><span id="default-span23"></span></code></pre>
+													<pre><code class="code-block"><span id="default-span23"></span></code></pre>
 													<script>
 													$(document).ready(function() {
 														$('#default-span23').html($('#custom-html-message-with-id-selector').html());
@@ -667,7 +684,7 @@ function hideProgressBar(container) {
 											<div class="card bg-light">
 												<div class="card-header">Source</div>
 												<div class="card-body">
-													<pre><code><span id="default-span17"></span></code></pre>
+													<pre><code class="code-block"><span id="default-span17"></span></code></pre>
 													<script>
 													$(document).ready(function() {
 														$('#default-span17').html($('#custom-blinking-text').html());
@@ -700,7 +717,7 @@ function hideProgressBar(container) {
 											<div class="card bg-light">
 												<div class="card-header">Source</div>
 												<div class="card-body">
-													<pre><code><span id="default-span18"></span></code></pre>
+													<pre><code class="code-block"><span id="default-span18"></span></code></pre>
 													<script>
 													$(document).ready(function() {
 														$('#default-span18').html($('#custom-blinking-html-message').html());
@@ -730,7 +747,7 @@ function hideProgressBar(container) {
 											<div class="card bg-light">
 												<div class="card-header">Source</div>
 												<div class="card-body">
-													<pre><code><span id="default-span19"></span></code></pre>
+													<pre><code class="code-block"><span id="default-span19"></span></code></pre>
 													<script>
 													$(document).ready(function() {
 														$('#default-span19').html($('#blinking-gears-spinner').html());
@@ -760,7 +777,7 @@ function hideProgressBar(container) {
 											<div class="card bg-light">
 												<div class="card-header">Source</div>
 												<div class="card-body">
-													<pre><code><span id="default-span20"></span></code></pre>
+													<pre><code class="code-block"><span id="default-span20"></span></code></pre>
 													<script>
 													$(document).ready(function() {
 														$('#default-span20').html($('#blinking-spinning-dots').html());
@@ -790,7 +807,7 @@ function hideProgressBar(container) {
 											<div class="card bg-light">
 												<div class="card-header">Source</div>
 												<div class="card-body">
-													<pre><code><span id="default-span21"></span></code></pre>
+													<pre><code class="code-block"><span id="default-span21"></span></code></pre>
 													<script>
 													$(document).ready(function() {
 														$('#default-span21').html($('#blinking-gears-spinner-and-blinking-text-message').html());
@@ -823,7 +840,7 @@ function hideProgressBar(container) {
 											<div class="card bg-light">
 												<div class="card-header">Source</div>
 												<div class="card-body">
-													<pre><code><span id="default-span22"></span></code></pre>
+													<pre><code class="code-block"><span id="default-span22"></span></code></pre>
 													<script>
 													$(document).ready(function() {
 														$('#default-span22').html($('#blinking-spinning-dots-blinking-custom-html-message').html());
@@ -853,7 +870,7 @@ function hideProgressBar(container) {
 											<div class="card bg-light">
 												<div class="card-header">Source</div>
 												<div class="card-body">
-													<pre><code><span id="default-span2"></span></code></pre>
+													<pre><code class="code-block"><span id="default-span2"></span></code></pre>
 													<script>
 													$(document).ready(function() {
 														$('#default-span2').html($('#day-of-week').html());
@@ -883,7 +900,7 @@ function hideProgressBar(container) {
 											<div class="card bg-light">
 												<div class="card-header">Source</div>
 												<div class="card-body">
-													<pre><code><span id="default-span3"></span></code></pre>
+													<pre><code class="code-block"><span id="default-span3"></span></code></pre>
 													<script>
 													$(document).ready(function() {
 														$('#default-span3').html($('#random').html());
